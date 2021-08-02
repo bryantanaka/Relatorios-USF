@@ -409,6 +409,7 @@ li{
     color: white;
     margin-right: 1vw;
     font-weight: lighter;
+    white-space: nowrap;
 }
 
 .relatorio-extra h2{
@@ -1011,8 +1012,25 @@ li{
     }
     
     #rel-extra-2{
-        margin-top: 29.5%;
-        
+        margin-top: 30%;
+    }
+    
+    .fa-instagram{
+        font-size: 2em;
+        left: 0%;
+        top: 90%;
+    }
+    
+    .fa-facebook{
+        font-size: 2em;
+        left: 10%;
+        top: 90%;
+    }
+    
+    .fa-linkedin{
+        font-size: 2em;
+        left: 20%;
+        top: 90%;
     }
 
     #botao-complemento{
