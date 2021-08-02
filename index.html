@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo-usf.png" type="image/x-icon">
+    <title>Relatório USF Social 2020</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body onload="iniciaModal('modal-home');">
+    <header>
+        <div class="line-top">
+            <div class="menu-topo">
+                <img src="images/menu_topo.png" alt="Menu">
+            </div>
+        </div>
+
+        <div class="relatorios">
+            <div class="menu-toggler" id="n1-relatorio">
+                <div class="nome-relatorio">
+                    <p class="titulo">
+                        PERFIL USF
+                    </p>
+                </div>
+            
+                <div class="conteudo-relatorio">
+                    <div>
+                        <ul id="lista">
+                            <li>MISSÃO E VISÃO</li>
+                            <li>MENSAGENS</li>
+                            <li>HISTÓRICO</li>
+                            <li>CÂMPUS E CURSOS</li>
+                            <li>DIÁLOGO COM AS PARTES INTERESSADAS</li>
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <a id="botao" href="https://issuu.com/grupobj/docs/relatorio_usf_social_2020/05?fr=sNzZhMjQwNDIzNTA" target="_blank">
+                            <button class="button">Leia mais</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-toggler" id="n2-relatorio">
+                <div class="nome-relatorio">
+                    <p class="titulo" id="rel3">
+                        DIMENSÃO DE ENSINO, PESQUISA E EXTENSÃO
+                    </p>
+                </div>
+
+                <div class="conteudo-relatorio">
+                    <div>
+                        <ul id="lista">
+                            <li>PERFIL DOS ALUNOS</li>
+                            <li>CDAPH</li>
+                            <li>QUALIDADE DE ENSINO</li>
+                            <li>PROGRAMA DE PÓS-GRADUAÇÃO STRICTO SENSU E PRODUÇÃO CIENTÍFICA</li>
+                            <li>PROGRAMA DE INCLUSÃO NO ENSINO SUPERIOR</li>
+                            <li>NÚCLEOS DA USF</li>
+                            <li>VEJA+</li>
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <a id="botao" href="https://issuu.com/grupobj/docs/relatorio_usf_social_2020/21?fr=sNzZhMjQwNDIzNTA" target="_blank">
+                            <button class="button">Leia mais</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-toggler" id="n5-relatorio">
+                <div class="nome-relatorio">
+                    <p class="titulo" id="rel4">
+                        DIMENSÃO INSTITUCIONAL
+                    </p>
+                </div>
+
+                <div class="conteudo-relatorio">
+                    <div>
+                        <ul id="lista">
+                            <li>SISTEMA DE GESTÃO</li>
+                            <li>PERFIL DOS FUNCIONÁRIOS</li>
+                            <li>POLÍTICAS INSTITUCIONAIS</li>
+                            <li>BENEFÍCIOS E INCENTIVOS</li>
+                            <li>SERVIÇO ESPECIALIZADO EM SEGURANÇA DO TRABALHO</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <a id="botao" href="https://issuu.com/grupobj/docs/relatorio_usf_social_2020/17?fr=sNzZhMjQwNDIzNTA" target="_blank">
+                            <button class="button">Leia mais</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-toggler" id="n6-relatorio">
+                <div class="nome-relatorio">
+                    <p class="titulo">
+                        COMPROMISSOS QUE A USF APOIA
+                    </p>
+                </div>
+                
+                <div class="conteudo-relatorio">
+                    <div>
+                        <ul id="lista">
+                            <li>OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL</li>
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <a id="botao" href="https://issuu.com/grupobj/docs/relatorio_usf_social_2020/17?fr=sNzZhMjQwNDIzNTA" target="_blank"></a>
+                            <button class="button">Leia mais</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="slideshow-container">
+                <div class="mySlides-auto fade">
+                    <div>
+                        <a id="botao">
+                            <button class="button" id="botao-mensagem" onclick="iniciaModal('modal-promocao');">Leia agora</button>
+                        </a>
+                    </div>
+    
+                    <div id="mensagem-presidente">    
+                        <img id="banner-presidente" src="images/Banners/banner-presidente.png" alt="Mensagem do Presidente">
+                    </div>
+                </div>
+            
+                <div class="mySlides-auto fade">
+                    <div>
+                        <a id="botao">
+                            <button class="button" id="botao-mensagem" onclick="iniciaModal('modal-linha');">Leia agora</button>
+                        </a>
+                    </div>
+    
+                    <div id="mensagem-presidente">    
+                        <img id="banner-presidente" src="images/Banners/banner-linha.png" alt="Linha do tempo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!--#endregion-->
+
+<!--#region main-->
+<section>
+    <div class="container">
+        <div class="section-heading" id="Ações">
+            <h1>CONFIRA ALGUMAS AÇÕES SOCIAIS REALIZADAS</h1>
+            <img src="images/tau.png" id="tau" alt="">
+        </div>
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/Banners/banner-acao1.png">
+                <div>
+                    <a id="botao" href="https://issuu.com/grupobj/docs/relatorio_usf_social_2020/81?fr=sNzZhMjQwNDIzNTA" target="_blank">
+                        <button class="button" id="botao-slide">Ver Mais</button>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="images/Banners/banner-acao2.png">
+                <div>
+                    <a id="botao" href="https://issuu.com/grupobj/docs/relatorio_usf_social_2020/84?fr=sNzZhMjQwNDIzNTA" target="_blank">
+                        <button class="button" id="botao-slide">Ver Mais</button>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="images/Banners/banner-acao3.png">
+                <div>
+                    <a id="botao" href="https://issuu.com/grupobj/docs/relatorio_usf_social_2020/90?fr=sNzZhMjQwNDIzNTA" target="_blank">
+                        <button class="button" id="botao-slide">Ver Mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/Banners/banner-acao4.png">
+                <div>
+                    <a id="botao" href="https://issuu.com/grupobj/docs/relatorio_usf_social_2020/110?fr=sNzZhMjQwNDIzNTA" target="_blank">
+                        <button class="button" id="botao-slide">Ver Mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/Banners/banner-acao5.png">
+                <div>
+                    <a id="botao" href="https://issuu.com/grupobj/docs/relatorio_usf_social_2020/112?fr=sNzZhMjQwNDIzNTA" target="_blank">
+                        <button class="button" id="botao-slide">Ver Mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/Banners/banner-acao6.png">
+                <div>
+                    <a id="botao" href="https://issuu.com/grupobj/docs/relatorio_usf_social_2020/117?fr=sNzZhMjQwNDIzNTA" target="_blank">
+                        <button class="button" id="botao-slide">Ver Mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/Banners/banner-acao7.png">
+                <div>
+                    <a id="botao" href="https://issuu.com/grupobj/docs/relatorio_usf_social_2020/118?fr=sNzZhMjQwNDIzNTA" target="_blank">
+                        <button class="button" id="botao-slide">Ver Mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/Banners/banner-acao8.png">
+                <div>
+                    <a id="botao" href="https://issuu.com/grupobj/docs/relatorio_usf_social_2020/118?fr=sNzZhMjQwNDIzNTA" target="_blank">
+                        <button class="button" id="botao-slide">Ver Mais</button>
+                    </a>
+                </div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">
+                <p>
+                    &#10094;
+                </p>
+            </a>
+            <a class="next" onclick="plusSlides(1)">
+                <p>
+                    &#10095;
+                </p>
+            </a>
+        </div>
+    </div>
+</section>
+<!--#endregion-->
+
+<!--#region main-->
+<section>
+    <div class="complemento">
+        <div class="outros-relatorios">
+            <div class="relatorio-extra" id="rel-extra-1">
+                <p>
+                    <h1> AÇÕES SOCIAIS DA USF </h1>
+                </p>
+
+                <br>
+
+                <p>
+                    <h2> Conheça outras ações sociais e de sustentabilidade promovidas pela USF. </h2>
+                </p>
+
+                <div>
+                    <a href="https://www.instagram.com/usfoficial/" class="icon-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://web.facebook.com/usfoficial/?_rdc=1&_rdr" class="icon-link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/school/universidade-sao-francisco" class="icon-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a id="botao" href="https://www.usf.edu.br/institucional/72964642,6/apresentacao.htm#conteudoInternas" target="_blank">
+                        <button class="button" id="botao-complemento">Ver Mais</button>
+                    </a>
+                </div>                    
+            </div>
+
+            <div class="relatorio-extra" id="rel-extra-2">
+                <p>
+                    <h1> RELATÓRIO DOS ANOS ANTERIORES </h1>
+                </p>
+
+                <br>
+
+                <p>
+                    <h2>Confira os relatórios dos anos anteriores e conheça outras ações já realizadas pela instituição.</h2>
+                </p>
+                
+                <div>
+                    <a id="botao" href="https://www.usf.edu.br/publicacoes/relatorios.vm" target="_blank">
+                        <button class="button" id="botao-complemento">Ver Mais</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--#endregion-->
+<footer>
+    <div class="rodape">
+        <div class="imagem-footer">
+            <img src="images/rodape.png" alt="">
+        </div>
+        <div>
+            <form method="get" action="archives/relatorio_USF_Social_2020.pdf" target="_blank">
+                <button class="button" id="botao-relatorios">BAIXE SEU RELATÓRIO AQUI</button>
+            </form>
+        </div>
+    </div>
+</footer> 
+
+<div id="modal-promocao" class="modal-container">
+    <div class="modal">
+        <img id="banner-home" src="images/Banners/mensagem-presidente.png" alt="">
+        <button class="fechar" id="fechar-home">Voltar</button>
+    </div>
+</div>
+
+<div id="modal-linha" onmousewheel="scrollHorizontally()" class="modal-container1">
+    <div class="modal">
+        <img id="linha-do-tempo" src="images/linha-do-tempo.png" alt="">
+        <button class="fechar" id="fechar-linha">Voltar</button>
+    </div>
+</div>
+
+<div id="modal-home" class="modal-container">
+    <div class="modal">
+        <img id="banner-home" src="images/Banners/banner-topo.png" alt="">
+        <button class="fechar" id="fechar-home">Voltar</button>
+    </div>
+</div>
+
+</body>
+    <script src="main.js"></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+    <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
+</html>

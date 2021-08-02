@@ -1,0 +1,1093 @@
+@font-face {
+    font-family: "HUM521B";
+    src: url("/fonts/Humanst521\ BT.ttf");
+         
+}
+
+/*Start global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'HUM521B', 'Roboto', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: #E7DFDD;
+}
+
+h1{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.4em;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+img {
+    width: 100%;
+}
+
+/*End Global*/
+
+/*Start reusable*/
+.container{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1%;
+    position: relative;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
+.section-heading h1{
+    font-size: 2.5vw;
+    color: #03662f;
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+}
+
+#tau{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+}
+
+.section-heading h6{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.has-margin-right{
+    margin-right: .5rem;
+}
+
+.button {
+  position: relative;
+  background-color: transparent;
+  color: white;
+
+  left: 20%;
+  width: 50%;
+  height: 30px;
+
+  margin-top: 15px;
+  margin-bottom: 10px;
+  
+  text-align: center;
+  font-size: 2em;
+  transition-duration: 0.3s;
+
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: rgba(0,0,0,.6);
+  color: white;
+  border: 2px solid white;
+}
+/*End reusable*/
+
+/*Start header*/
+header{
+    width: 100%;
+}
+
+li{
+    margin: 1rem 2rem;
+}
+
+#n1-relatorio{ background-color: #a5859a; }
+
+#n2-relatorio{ background-color: #395085; }
+
+#n3-relatorio{ background-color: #e7a07a; }
+
+#n4-relatorio{ background-color: #9ebad8; }
+
+#n5-relatorio{ background-color: #b7cc84; }
+
+#n6-relatorio{ background-color: #28a745; }
+
+.relatorios{
+    width: 96vw;
+    height: 17vh;
+    min-width: 300px;
+    min-height: 100px;
+    margin-left: 1vw;
+    display: inline-flex;
+}
+
+.menu-toggler {
+    display: flex;
+    margin: 1px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    transition: height .5s;
+}
+
+.menu-toggler:hover {
+    height: max-content;
+}
+
+.nome-relatorio {
+    top: 1%;
+    margin-left: 15%;
+    width: 70%;
+    height: 17vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.titulo{
+    font-size: 1.5em;
+}
+
+.conteudo-relatorio{
+    width: 100%;
+    font-size: 0.7em;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 17vh;
+    transition: all 0s;
+    border-top: white solid 1px;
+}
+
+#rel3 { 
+    width: 75%;
+    transform: translate(-15%, 0);
+}
+
+#rel4 { 
+    width: 75%;
+    transform: translate(25%, 0);
+}
+
+.menu-toggler:hover .conteudo-relatorio{
+    visibility: visible;
+    opacity: 1;
+    height: max-content;
+    transition: all 1.2s;
+}
+
+#lista{
+    font-size: 1.8em;
+    margin-top: 10%;
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    line-height: 20px;
+}
+
+.line-top{
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    margin: auto;
+    border: 5px solid #03662f;
+    background-color: #03662f;
+    z-index: 999;
+}
+
+.menu-topo{
+    pointer-events: none;
+    position: absolute;
+    margin: auto;
+    left: 36%;
+    width: 28%;
+}
+
+.square-mask{
+    pointer-events: painted;
+    position: absolute;
+    top: 0;
+    width: 30%;
+    left: 35%;
+    height: 60%;
+    z-index: 9999;
+}
+
+.banner{
+    pointer-events: none;
+    position: relative;
+    top: 20px;
+}
+
+#mensagem-presidente {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    z-index: -1;
+}
+
+#botao-mensagem {
+    pointer-events: painted;
+    position: absolute;
+    top: 87%;
+    left: 80.5%;
+    width: 9%;
+    height: 30px;
+}
+/*End header*/
+
+/*Start Ações*/
+#Ações{
+    margin-top: 50px;
+    height: 16vh;
+    background-color: transparent;
+    line-height: 16vh;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: block;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+
+    width: 2.5vw;
+    height: 2.5vw;
+    min-width: 25px;
+    min-height: 25px;
+
+    color: #03662f;
+    font-weight: bold;
+    font-size: 1.8em;
+
+    transition: 0.5s ease;
+
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 2px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: -10%;
+}
+
+/* Position the "previous button" to the left */
+.prev {
+    left: -10%;
+}
+
+.next p {
+    margin: 0;
+    position: absolute;
+    top: 48.5%;
+    left: 51%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.prev p {
+    margin: 0;
+    position: absolute;
+    top: 48.5%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: #03662f;
+    color: white;
+    border-color: white;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    margin: 0 2px;
+    width: 2.5vh;
+    height: 2.5vh;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.8s;
+    animation-name: fade;
+    animation-duration: 0.8s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/*End */
+
+/*Start Complements*/
+.complemento{
+    height: auto;
+}
+
+.outros-relatorios{
+    position: relative;
+    background-image: url("images/complemento.png");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: 100%;
+    margin-top: 0;
+    left: 13px;
+    height: 50vw;
+}
+
+.relatorio-extra {
+    position: absolute;
+    width: 38vw;
+    margin-top: 0;
+    margin-left: 12%;
+}
+
+#rel-extra-1{
+    margin-top: 16%;
+}
+
+#rel-extra-2{
+    margin-top: 30.5%;
+}
+
+.relatorio-extra p {
+    width: 80%;
+    text-align: left;
+}
+
+.relatorio-extra h1{
+    font-size: 4em;
+    color: white;
+    margin-right: 1vw;
+    font-weight: lighter;
+}
+
+.relatorio-extra h2{
+    color: #03662f;
+    font-size: 3em;
+    font-weight: 400;
+    margin-right: 1vw;
+}
+
+.fa-instagram{
+    font-family: "Font Awesome 5 Brands";
+    position: absolute;
+    color: #03662f;
+    font-size: 5rem;
+    left: 0%;
+    margin-top: 2.8%;
+}
+
+.fa-instagram:hover{
+    background: linear-gradient(to bottom left, #fc0fc0, #ffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-facebook{
+    font-family: "Font Awesome 5 Brands";
+    position: absolute;
+    color: #03662f;
+    font-size: 5rem;
+    left: 10%;
+    margin-top: 2.8%;
+}
+
+.fa-facebook:hover{
+    background: #3b5998;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-linkedin{
+    font-family: "Font Awesome 5 Brands";
+    position: absolute;
+    color: #03662f;
+    font-size: 5rem;
+    left: 20%;
+    margin-top: 2.8%;
+}
+
+.fa-linkedin:hover{
+    background: #0e76a8;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#botao-complemento {
+    position: absolute;
+    color: #03662f;
+    left: 75%;
+    width: 20%;
+    border-color: #03662f;
+}
+
+#botao-complemento:hover {
+    color: white;
+    background-color: #03662f;
+}
+
+#botao-slide {
+    position: absolute;
+    color: #03662f;
+    left: 88%;
+    bottom: 1px;
+    width: 10%;
+    height: 9%;
+    border-color: #03662f;
+}
+
+#botao-slide:hover {
+    color: white;
+    background-color: #03662f;
+}
+/*End Complements*/
+
+/*Start rodape*/
+.rodape{
+    position: relative;
+    width: 100%;
+    height: max-content;
+}
+
+.imagem-footer{
+    position: absolute;
+    width: 100%;
+    z-index: -1000;
+}
+
+#botao-relatorios{
+    top: 2vw;
+    width: 25%;
+    left: 37.5%;
+    text-align: center;
+    color: white;
+    border-color: white;
+}
+
+#botao-relatorios:hover {
+    background-color: #03662f;
+}
+/*End rodape*/
+
+#modal-entry{
+    align-items: start;
+}
+
+#modal-home{
+    align-items: start;
+}
+
+#modal-promocao{
+    align-items: start;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255,255,255,.6);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.modal-container1 {
+    width: 100vw;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.modal-container.mostrar {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+
+.modal-container1.mostrar {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.modal {
+    position: relative;
+}
+
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100vh, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal {
+    animation: modalIn .3s;
+}
+
+.fechar {
+    position: absolute;
+    font-family: 'HUM521B';
+    font-size: 1.9em;
+    font-weight: 700;
+    top: 96.5%;
+    width: 6vw;
+    height: 3vw;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.fechar:hover{
+    background-color: rgba(0,0,0,.6);
+}
+
+#fechar-linha {
+    background-color: white;
+    position: fixed;
+    border: 2px solid green;
+    color: green;
+    right: 20px;
+    bottom: 20px;
+}
+
+#message{
+    width: auto;
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+#linha-do-tempo{
+    height: 100vh;
+    width: auto;
+}
+
+#fechar-cima{
+    bottom: 30%;
+    right: 3%;
+}
+
+#fechar-home{
+    bottom: 16%;
+    right: 11%;
+}
+
+#fechar-linha{
+    top: 92%;
+    right: 1%;
+}
+
+#banner-home{
+    margin-left: 10%;
+    width: 80%;
+    height: 100%;
+}
+/*Start*/
+@media screen and (min-width: 1920px) {
+    html{
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    #fechar-home{
+        top: 96%;
+        right: 10.5%;
+    }
+}
+
+@media screen and (max-width: 1919px) {
+    html{
+        font-size: 8px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    html{
+        font-size: 6px;
+        font-family: 'HUM521B', 'Roboto', sans-serif;
+        color: white;
+        overflow-x: hidden;
+    }
+
+    .section-heading h1{
+        font-size: 5rem;
+    }
+
+    .titulo{
+        font-size: 2em;
+    }
+
+    #lista{
+        font-size: 2.4em;
+    }
+
+    #botao-mensagem {
+        font-size: 2em;
+    }
+
+    .button{
+        font-size: 2.5em;
+        width: 40%;
+        left: 25%;
+    }
+
+    .fechar {
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    #fechar-linha {
+        position: fixed;
+        border: 2px solid green;
+        color: green;
+        right: 59px;
+        bottom: 20px;
+    }
+
+    .next p, .prev p {
+        font-size: 2em;
+    }
+
+    .menu-toggler p{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    html{
+        font-size: 5px;
+        font-family: 'HUM521B', 'Roboto', sans-serif;
+        color: white;
+        overflow-x: hidden;
+    }
+
+    #tau{
+        position: absolute;
+        top: 0;
+        left: -5%;
+        width: 10%;
+    }
+
+    .section-heading h1{
+        font-size: 6rem;
+    }
+
+    .titulo{
+        font-size: 2em;
+    }
+    
+    #rel4 { 
+        width: 50%;
+        transform: translate(0, 0);
+    }
+
+    #rel3 { 
+        transform: translate(0, 0);
+    }
+
+    #lista{
+        font-size: 2.4em;
+    }
+
+    #botao-mensagem {
+        top: 82%;
+        font-size: 3em;
+    }
+
+    .button{
+        font-size: 3em;
+        width: 40%;
+        left: 25%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        width: 100%;
+        height: 60vh;
+    }
+
+    p {
+        font-size: 2em;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    .relatorios {
+        width: 100%;
+        height: max-content;
+        margin: 0;
+        display: block;
+        background-color: #03662f;
+    }
+
+    .menu-toggler {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        margin: 0;
+        height: 4vh;
+        top: 70px;
+        transition: height .5s;
+    }
+
+    #rel3 { transform: translate(-50%, -50%); }
+    #rel4 { transform: translate(-50%, -50%); }
+
+    .menu-toggler:hover {
+        max-height: max-content;
+    }
+
+    .menu-toggler p {
+        font-size: 2.5vw;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+
+    .section-heading h1{
+        font-size: 2rem;
+    }
+
+    .banner{
+        display: block;
+        top: 20px;
+    }
+    
+    .titulo{
+        font-size: 1.2em;
+    }
+    
+    .conteudo-relatorio{
+        margin-top: 0;
+    }
+
+    #lista{
+        font-size: 1.5em;
+        width: 80%;
+        margin-left: 10%;
+        text-align: left;
+        line-height: 20px;
+    }
+    
+    #botao-relatorios{
+        top: 2vw;
+        width: 25%;
+        left: 37.5%;
+        text-align: center;
+        color: white;
+        border-color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        width: 100%;
+        height: auto;
+    }
+
+    .button{
+        border-width: 1px;
+    }
+
+    #tau{
+        position: absolute;
+        top: 15%;
+        left: -10%;
+        width: 10%;
+    }
+
+    p {
+        font-size: 1em;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    .relatorios {
+        width: 100%;
+        height: max-content;
+        margin: 0;
+        display: block;
+        background-color: #03662f;
+    }
+
+    .menu-toggler {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        margin: 0;
+        height: 4vh;
+        top: 38px;
+        transition: height .5s;
+    }
+
+    #rel3 { transform: translate(-50%, -50%); }
+    #rel4 { transform: translate(-50%, -50%); }
+
+    .menu-toggler:hover {
+        max-height: max-content;
+    }
+
+    .menu-toggler p {
+        font-size: 1.8em;
+        position: absolute;
+        top: 2vh;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+
+    .banner{
+        display: block;
+        top: 50px;
+    }
+    
+    .conteudo-relatorio{
+        font-size: .8em;
+        transition: all 0s;
+        z-index: 10000;
+    }
+
+    #lista{
+        font-size: 2em;
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+        text-align: left;
+        line-height: 20px;
+    }
+
+    #botao-mensagem {
+        pointer-events: painted;
+        position: absolute;
+        top: 64.5%;
+        left: 79.5%;
+        width: 4.5em;
+        height: 2.8em;
+        font-size: 1.4em;
+        border: 1px solid white;
+    }
+
+    .button{
+        font-size: 2.5em;
+        width: 20%;
+        left: 35%;
+    }
+
+    .section-heading{
+        margin-bottom: 0;
+        white-space: nowrap;
+    }
+
+    .section-heading h1{
+        font-size: 2em;
+    }
+    
+    /*Sliders*/
+    .container{
+        width: 80%;
+        margin-left: 10%;
+        position: relative;
+    }
+
+    .next p, .prev p {
+        font-size: 2.5em;
+    }
+
+    #botao-slide {
+        top: 68%;
+        width: 11%;
+        height: 2em;
+        border: .1px solid #03662f;
+        font-size: 1.2em;
+    }
+
+    /*End Sliders*/
+    
+
+    /*complementos*/
+    #botao-complemento {
+        font-size: 1em;
+        width: 25%;
+        border: 1px solid #03662f;
+        height: 10%;
+        top: -15px;
+    }
+
+    .relatorio-extra{
+        margin-left: 9%;
+    }
+
+    .relatorio-extra h1{
+        font-size: 1.2em;
+        white-space: nowrap;
+    }
+
+    .relatorio-extra h2{
+        font-size: 1em;
+    }
+
+    #rel-extra-1{
+        margin-top: 8%;
+    }
+    
+    #rel-extra-2{
+        margin-top: 29.5%;
+        
+    }
+
+    #botao-complemento{
+        position: absolute;
+        font-size: 1.4em;
+        top: 40%;
+        left: 80%;
+        height: 13px;
+    }
+    /*End Complementos*/
+
+    /*Start rodape*/
+    #botao-relatorios{
+        font-size: 1em;
+        border: 1px solid white;
+        height: 15px;
+        top: -10px;
+    }
+
+    #botao-relatorios:hover {
+        background-color: #03662f;
+    }
+    /*End rodape*/
+
+
+    /*PopUps*/
+    .fechar {
+        font-size: 1.5em;
+        font-weight: 500;
+        bottom: 6px;
+        right: 4px;
+        width: 5vw;
+        height: 5vw;
+        border: 1px solid white;
+    }
+    
+    #fechar-linha {
+        position: fixed;
+        font-size: 3em;
+        border: 2px solid green;
+        color: green;
+        right: 20px;
+        bottom: 20px;
+        width: 20vw;
+        height: 10vw;
+        background-color: white;
+    }
+
+    #modal-home{
+        width: 99%;
+    }
+
+    #modal-promocao{
+        width: 99%;
+    }
+
+    #banner-home{
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    .modal-container {
+        height: 100%;
+        z-index: 99999;
+    }
+
+    .modal-container1 {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    #fechar-home{
+        bottom: 1%;
+        right: 1%;
+        width: 8%;
+    }
+    /*End PopUps*/
+}
