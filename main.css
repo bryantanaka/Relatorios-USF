@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "HUM521B";
-    src: url("/fonts/Humanst521\ BT.ttf");
+    font-family: "HUM521 BT";
+    src: url("/fonts/Humanst521 BT.ttf");
          
 }
 
@@ -13,7 +13,7 @@
 
 html{
     font-size: 10px;
-    font-family: 'HUM521B', 'Roboto', sans-serif;
+    font-family: 'HUM521 BT', sans-serif;
     color: white;
     overflow-x: hidden;
 }
