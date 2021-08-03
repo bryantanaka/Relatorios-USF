@@ -408,6 +408,7 @@ li{
     color: white;
     margin-right: 1vw;
     font-weight: lighter;
+    white-space: nowrap;
 }
 
 .relatorio-extra h2{
