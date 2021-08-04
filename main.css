@@ -399,7 +399,7 @@ li{
 
 #titulo-extra{
     color: #03662f;
-    margin-left: -7%;
+    text-transform: uppercase;
 }
 
 #rel-extra-1{
@@ -416,7 +416,7 @@ li{
 }
 
 .relatorio-extra h1{
-    font-size: 4em;
+    font-size: 3.9em;
     color: white;
     margin-right: 1vw;
     font-weight: lighter;
